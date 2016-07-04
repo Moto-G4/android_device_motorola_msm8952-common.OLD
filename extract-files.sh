@@ -20,11 +20,11 @@ function extract() {
                 adb pull /system/$FILE $2/$DEST
             fi
         else
-            cp $SRC/system/$FILE $2/$DEST
+            cp $SRC/$FILE $2/$DEST
             # if file dot not exist try destination
             if [ "$?" != "0" ]
                 then
-                cp $SRC/system/$DEST $2/$DEST
+                cp $SRC/$DEST $2/$DEST
             fi
         fi
     done
@@ -46,13 +46,13 @@ else
   fi
 fi
 
-BASE=../../../vendor/$VENDOR/msm8955-common/proprietary
+BASE=../../../vendor/$VENDOR/msm8952-common/proprietary
 rm -rf $BASE/*
 
 DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $DEVBASE/*
 
-extract ../../$VENDOR/msm8955-common/proprietary-files.txt $BASE
+extract ../../$VENDOR/msm8952-common/proprietary-files.txt $BASE
 extract ../../$VENDOR/$DEVICE/proprietary-files.txt $DEVBASE
 
 ./setup-makefiles.sh

@@ -78,7 +78,7 @@ EOF
 # limitations under the License.
 EOF
 
-export DEVICE=msm8955-common
+export DEVICE=msm8952-common
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
@@ -102,10 +102,10 @@ PRODUCT_COPY_FILES += \\
 EOF
 
 LINEEND=" \\"
-COUNT=`wc -l ../msm8955-common/proprietary-files.txt | awk {'print $1'}`
-DISM=`egrep -c '(^#|^$)' ../msm8955-common/proprietary-files.txt`
+COUNT=`wc -l ../msm8952-common/proprietary-files.txt | awk {'print $1'}`
+DISM=`egrep -c '(^#|^$)' ../msm8952-common/proprietary-files.txt`
 COUNT=`expr $COUNT - $DISM`
-for FILE in `egrep -v '(^#|^$)' ../msm8955-common/proprietary-files.txt`; do
+for FILE in `egrep -v '(^#|^$)' ../msm8952-common/proprietary-files.txt`; do
   COUNT=`expr $COUNT - 1`
   if [ $COUNT = "0" ]; then
     LINEEND=""

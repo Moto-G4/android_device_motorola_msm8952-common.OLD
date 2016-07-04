@@ -1,20 +1,15 @@
-# Proprietary files for msm8955-common
+# Proprietary files for msm8952-common
 
 # ADSP
 bin/adsprpcd
 vendor/lib/libadsprpc.so
 
 # Audio
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
-vendor/lib/libhwdaphal.so
-vendor/lib/libqct_resampler.so
 vendor/lib/libvoice-svc.so
 
 # Bluetooth
@@ -26,7 +21,6 @@ vendor/lib/libbtnv.so
 lib/libmot-qc-fd-offline.so
 lib/libmot_sensorlistener.so
 vendor/lib/libfastcvopt.so
-vendor/lib/libmmipl.so
 vendor/lib/libscve.so
 vendor/lib/libscve_mv.so
 
@@ -42,8 +36,6 @@ vendor/lib/libmm-qdcm.so
 
 # DRM
 bin/qseecomd
-lib/libdrmdecrypt.so
-vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -53,9 +45,7 @@ vendor/lib/libmmQSM.so
 vendor/lib/liboemcrypto.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libtzdrmgenprov.so
 vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
 
 # GPS
@@ -70,19 +60,12 @@ vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 
 # Graphics
-vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libESXEGL_adreno.so
-vendor/lib/egl/libESXGLESv1_CM_adreno.so
-vendor/lib/egl/libESXGLESv2_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libRBEGL_adreno.so
-vendor/lib/egl/libRBGLESv1_CM_adreno.so
-vendor/lib/egl/libRBGLESv2_adreno.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
 vendor/lib/libc2d30-a3xx.so
@@ -95,7 +78,6 @@ vendor/lib/libOpenCL.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
 vendor/lib/libRSDriver_adreno.so
-vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
 
 # Graphics firmware
@@ -103,18 +85,11 @@ etc/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw
 
 # Media
-lib/libdivxdrmdecrypt.so
-lib/libOmxVdecHevc.so
-vendor/lib/libDivxDrm.so
--vendor/lib/libHevcSwDecoder.so
-vendor/lib/libI420colorconvert.so
 vendor/lib/libmmosal.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libSHIMDivxDrm.so
-vendor/lib/libwfdcommonutils.so
 
 # Moto
 bin/batt_health
@@ -124,11 +99,9 @@ bin/hardware_revisions.sh
 # Qualcomm framework
 bin/irsc_util
 vendor/lib/libdiag.so
-vendor/lib/libDiagService.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
-vendor/lib/libFileMux.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
@@ -147,7 +120,6 @@ vendor/lib/libsmemlog.so
 bin/netmgrd
 bin/qmuxd
 bin/radish
-bin/rfs_access
 bin/rild
 bin/rmt_storage
 bin/qmi_motext_hook
@@ -168,8 +140,6 @@ vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libmmrtpdecoder.so
-vendor/lib/libmmrtpencoder.so
 vendor/lib/libnetmgr.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libril-qc-qmi-1.so
@@ -181,14 +151,12 @@ vendor/lib/libSubSystemShutdown.so
 
 # Sensorhub Firmware
 etc/firmware/sensorhubfw.bin
-etc/firmware/sensorhubver.txt
 
 # Sensors
 bin/stml0xx
-lib/hw/sensorhub.msm8955.so
+lib/hw/sensorhub.msm8952.so
 
 # Thermal
-bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
