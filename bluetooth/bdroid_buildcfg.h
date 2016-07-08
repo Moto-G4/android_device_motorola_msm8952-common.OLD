@@ -25,14 +25,8 @@ inline const char* BtmGetDefaultName()
 	char device[PROPERTY_VALUE_MAX];
 	property_get("ro.boot.device", device, "");
 
-	if (!strcmp("surnia", device)) {
-		return "Moto E";
-	} else if (!strcmp("osprey", device)) {
-		return "Moto G";
-	} else if (!strcmp("merlin", device)) {
-		return "Moto G Turbo";
-	} else if (!strcmp("lux", device)) {
-		return "Moto X Play";
+	if (!strcmp("athene", device)) {
+		return "Moto G4";
 	}
 
 	return "Motorola";
