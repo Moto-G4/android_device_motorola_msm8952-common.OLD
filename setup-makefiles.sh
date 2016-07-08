@@ -1,5 +1,8 @@
 #!/bin/bash
 
+VENDOR=motorola
+DEVICE=msm8952-common
+
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
@@ -181,7 +184,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter lux merlin osprey surnia,\$(TARGET_DEVICE)),)
+ifneq (\$(filter athene,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := TimeService

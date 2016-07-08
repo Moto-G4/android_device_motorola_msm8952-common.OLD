@@ -18,10 +18,8 @@ LOCAL_PATH:= $(call my-dir)
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
 include $(CLEAR_VARS)
 
-ifneq ($(filter lux merlin surnia, $(TARGET_DEVICE)),)
+ifneq ($(filter athene, $(TARGET_DEVICE)),)
 LOCAL_SRC_FILES := lights.c
-else ifneq ($(filter osprey, $(TARGET_DEVICE)),)
-LOCAL_SRC_FILES := lights_osprey.c
 endif
 
 LOCAL_CLANG := true
