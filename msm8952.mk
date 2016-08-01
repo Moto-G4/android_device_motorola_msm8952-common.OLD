@@ -76,53 +76,49 @@ PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
+## Camera
+#PRODUCT_PACKAGES += \
+#    camera.msm8952 \
+#    libbson \
+#    Snap
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8952 \
-    libbson \
-    Snap
+## CMActions
+#PRODUCT_PACKAGES += \
+#    CMActions
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
+## Display
+#PRODUCT_PACKAGES += \
+#    gralloc.msm8952 \
+#    copybit.msm8952 \
+#    hwcomposer.msm8952 \
+#    memtrack.msm8952
 
-# Display
-PRODUCT_PACKAGES += \
-    gralloc.msm8952 \
-    copybit.msm8952 \
-    hwcomposer.msm8952 \
-    memtrack.msm8952
+## Ebtables
+#PRODUCT_PACKAGES += \
+#    ebtables \
+#    ethertypes \
+#    libebtc
 
-# Ebtables
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
+## FM
+#PRODUCT_PACKAGES += \
+#    FMRadio \
+#    libfmjni
 
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
-
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8952
+## GPS
+#PRODUCT_PACKAGES += \
+#    gps.msm8952
 
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-# Keystore
-PRODUCT_PACKAGES += \
-    keystore.msm8952
+## Keystore
+#PRODUCT_PACKAGES += \
+#    keystore.msm8952
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.msm8952
+## Lights
+#PRODUCT_PACKAGES += \
+#    lights.msm8952
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -130,27 +126,27 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-# OMX
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxVidcCommon \
-    libstagefrighthw
+## OMX
+#PRODUCT_PACKAGES += \
+#    libOmxAacEnc \
+#    libOmxAmrEnc \
+#    libOmxCore \
+#    libOmxEvrcEnc \
+#    libOmxQcelp13Enc \
+#    libOmxVdec \
+#    libOmxVenc \
+#    libOmxVidcCommon \
+#    libstagefrighthw
 
-# Power
-PRODUCT_PACKAGES += \
-    power.msm8952
+## Power
+#PRODUCT_PACKAGES += \
+#    power.msm8952
 
 # Ramdisk
-PRODUCT_PACKAGES += \
-    init.qcom.bt.sh \
-    init.qcom.ril.sh \
-    stml0xx_wrapper.sh
+#PRODUCT_PACKAGES += \
+#    init.qcom.bt.sh \
+#    init.qcom.ril.sh \
+#    stml0xx_wrapper.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -170,9 +166,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstlport
 
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
+## Thermal
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
 # Wifi
 PRODUCT_PACKAGES += \
