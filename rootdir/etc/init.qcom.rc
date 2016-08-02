@@ -831,4 +831,3 @@ on moto-charger
     start batt_health
     start thermal-com
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
-
