@@ -195,3 +195,10 @@ etc/firmware/venus-v1.b03
 etc/firmware/venus-v1.b04
 etc/firmware/venus-v1.mbn
 etc/firmware/venus-v1.mdt
+
+# Wifi
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+#etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
+etc/wifi/WCNSS_qcom_cfg.ini
+etc/wifi/WCNSS_qcom_wlan_nv.bin
+etc/wifi/WCNSS_wlan_dictionary.dat
